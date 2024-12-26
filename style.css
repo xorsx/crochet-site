@@ -26,6 +26,10 @@ p {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 600px;
   margin: 20px auto;
@@ -55,6 +59,8 @@ footer {
   color: black;
 }
 .crochet-intro-picture {
+  display: flex;
+  align-items: center;
   border-radius: 10px;
   transition: all 150ms ease-in-out;
 }
