@@ -9,7 +9,8 @@ body {
 button {
   display: block;
   margin: 0 auto;
-  border-color: 1px solid plum;
+  background: lavender;
+  border: 1px solid black;
   border-radius: 6px;
   font-size: 24px;
   padding: 15px 15px;
@@ -59,8 +60,9 @@ footer {
   color: black;
 }
 .crochet-intro-picture {
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
+
   border-radius: 10px;
   transition: all 150ms ease-in-out;
 }
