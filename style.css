@@ -1,0 +1,94 @@
+img {
+  max-width: 100%;
+  border-color: 1px solid plum;
+  border-radius: 6px;
+}
+body {
+  background-color: #ff9f8d;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  border-color: 1px solid plum;
+  border-radius: 6px;
+  font-size: 24px;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+}
+
+button:hover {
+  background: #e4c1a8;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  margin: 10px 0 px;
+  font-size: 18px;
+}
+
+.theme-button {
+  font-size: 10px;
+  background: black;
+  color: white;
+  padding: 5 8px;
+}
+
+.theme-button:hover {
+  background-color: white;
+  color: black;
+}
+.crochet-intro-picture {
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+.crochet-intro-picture:hover {
+  filter: contrast(80%);
+  transform: scale(1.1);
+}
+
+.grid {
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid:img {
+  width: 100%;
+  border-radius: 8px;
+  transition: all 150ms ease-in-out;
+}
+
+.grid img:hover {
+  transform: scale(2);
+}
+
+.dark {
+  background: black;
+}
+
+.dark .container {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.dark a {
+  color: plum;
+}
