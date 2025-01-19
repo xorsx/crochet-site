@@ -1,23 +1,28 @@
-img {
-  max-width: 100%;
-  border-color: 1px solid plum;
-  border-radius: 6px;
-}
 body {
-  background-color: #ff9f8d;
-}
-button {
-  display: block;
-  margin: 0 auto;
-  background: lavender;
-  border: 1px solid black;
-  border-radius: 6px;
-  font-size: 24px;
-  padding: 15px 15px;
-  text-decoration: none;
+  background-image: url("src/dreamybackground.jpg");
+  /* background-color: #d3c4fc; */
+  font-family: "CustomFont", sans-serif;
 }
 
-h1,
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #d3e3fd;
+  border-radius: 8px;
+  border: solid 10px #9caae8;
+}
+
+header {
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #d3e3fd;
+  border-radius: 8px;
+  border: solid 10px #9caae8;
+}
+
 h2 {
   text-align: center;
 }
@@ -27,19 +32,29 @@ p {
   line-height: 1.5;
 }
 
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
 a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
+button {
+  display: block;
+  margin: 0 auto;
+  background: #d3c4fc;
+  border: solid 10px #9caae8;
+  border-radius: 6px;
+  font-family: "CustomFont";
+  font-size: 24px;
+  padding: 15px 15px;
+  text-decoration: none;
 }
 
 button:hover {
-  background: #e4c1a8;
+  background: #a795c5;
   cursor: pointer;
 }
 footer {
@@ -49,20 +64,21 @@ footer {
 }
 
 .theme-button {
-  font-size: 10px;
-  background: black;
-  color: white;
+  font-family: "CustomFont";
+  font-size: 20px;
+  background: #d3c4fc;
+  color: black;
   padding: 5 8px;
 }
 
 .theme-button:hover {
-  background-color: white;
-  color: black;
+  background-color: #000000;
+  color: white;
 }
 .crochet-intro-picture {
   display: block;
   margin: 0 auto;
-
+  border: solid 10px #9caae8;
   border-radius: 10px;
   transition: all 150ms ease-in-out;
 }
@@ -88,15 +104,30 @@ footer {
   transform: scale(2);
 }
 
-.dark {
-  background: black;
+.crochet-picture {
+  border: solid 8px #9caae8;
 }
 
+.dark {
+  background-image: url("src/darknightsky.jpg");
+}
+
+.dark header {
+  background: #452942;
+  color: #edcedd;
+}
 .dark .container {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  background: #452942;
+  color: #edcedd;
 }
 
 .dark a {
-  color: plum;
+  color: #1d2a51;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("hyggemanddemoregular-yy0pm-webfont.woff") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
