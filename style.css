@@ -21,10 +21,21 @@ header {
   background: #d3e3fd;
   border-radius: 8px;
   border: solid 10px #9caae8;
+  font-size: 24px;
 }
 
 h2 {
   text-align: center;
+}
+ul {
+  list-style-type: none; /* Remove default numbering */
+  padding-left: 0; /* Remove indentation */
+}
+
+ul li::before {
+  content: "★"; /* Or use ☆ for an empty star */
+  color: #a795c5; /* Star color */
+  margin-right: 10px; /* Space between the star and list text */
 }
 
 p {
@@ -87,6 +98,14 @@ footer {
   transform: scale(1.1);
 }
 
+.crochet-picture {
+  border: solid 8px #9caae8;
+}
+
+.crochet-icon {
+  max-width: 50px;
+}
+
 .grid {
   margin: 15px 0;
   display: grid;
@@ -104,25 +123,35 @@ footer {
   transform: scale(2);
 }
 
-.crochet-picture {
-  border: solid 8px #9caae8;
-}
-
 .dark {
   background-image: url("src/darknightsky.jpg");
 }
 
 .dark header {
   background: #452942;
-  color: #edcedd;
+  color: #d3c4fc;
+  border: 10px solid #1b1a2c;
 }
 .dark .container {
   background: #452942;
-  color: #edcedd;
+  color: #d3c4fc;
+  border: 10px solid #1b1a2c;
+}
+
+.dark button {
+  border: 10px solid #1b1a2c;
 }
 
 .dark a {
   color: #1d2a51;
+}
+
+.dark .crochet-picture {
+  border: 8px solid #1b1a2c;
+}
+
+.dark .crochet-intro-picture {
+  border: 8px solid #1b1a2c;
 }
 
 @font-face {
