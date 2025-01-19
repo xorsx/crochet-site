@@ -143,7 +143,7 @@ footer {
 }
 
 .dark a {
-  color: #1d2a51;
+  color: #d3c4fc;
 }
 
 .dark .crochet-picture {
@@ -152,6 +152,10 @@ footer {
 
 .dark .crochet-intro-picture {
   border: 8px solid #1b1a2c;
+}
+
+.dark footer {
+  color: white;
 }
 
 @font-face {
