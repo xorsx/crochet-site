@@ -24,7 +24,8 @@ header {
   font-size: 24px;
 }
 
-h2 {
+h2,
+h3 {
   text-align: center;
 }
 ul {
@@ -158,18 +159,34 @@ footer {
   color: white;
 }
 .grid-2 {
-  max-width: 600px;
-}
-.tutorial {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: stretch;
   margin: 20px auto;
-  aspect-ratio: 21/9;
-  padding: 15px;
+}
 
-  padding: 20px;
+.card {
+  display: block;
+  justify-content: center;
+  max-width: 400px; /* Limits stretching on wider screens */
+  margin: 0 auto;
+
   background: #d3e3fd;
   border-radius: 8px;
   border: solid 10px #9caae8;
+  overflow: hidden;
+}
+.tutorial {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  margin: 0 auto;
+}
+
+.card p {
+  text-align: center;
+  margin: 5px;
 }
 
 @font-face {
@@ -182,5 +199,8 @@ footer {
 @media (max-width: 900px) {
   .tutorial {
     max-width: fit-content;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
   }
 }
