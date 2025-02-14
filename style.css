@@ -93,6 +93,7 @@ footer {
   border: solid 10px #9caae8;
   border-radius: 10px;
   transition: all 150ms ease-in-out;
+  filter: saturate(120%);
 }
 .crochet-intro-picture:hover {
   filter: contrast(80%);
@@ -101,6 +102,7 @@ footer {
 
 .crochet-picture {
   border: solid 8px #9caae8;
+  filter: saturate(120%);
 }
 
 .crochet-icon {
