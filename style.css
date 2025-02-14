@@ -157,10 +157,30 @@ footer {
 .dark footer {
   color: white;
 }
+.grid-2 {
+  max-width: 600px;
+}
+.tutorial {
+  display: block;
+  margin: 20px auto;
+  aspect-ratio: 21/9;
+  padding: 15px;
+
+  padding: 20px;
+  background: #d3e3fd;
+  border-radius: 8px;
+  border: solid 10px #9caae8;
+}
 
 @font-face {
   font-family: "CustomFont";
   src: url("hyggemanddemoregular-yy0pm-webfont.woff") format("opentype");
   font-weight: normal;
   font-style: normal;
+}
+
+@media (max-width: 900px) {
+  .tutorial {
+    max-width: fit-content;
+  }
 }
